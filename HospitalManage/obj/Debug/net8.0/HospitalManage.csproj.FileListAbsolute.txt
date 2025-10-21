@@ -45,4 +45,3 @@ H:\BMCSDL\Project\HospitalManage\HospitalManage\obj\Debug\net8.0\staticwebassets
 H:\BMCSDL\Project\HospitalManage\HospitalManage\obj\Debug\net8.0\Hospital.995817F7.Up2Date
 H:\BMCSDL\Project\HospitalManage\HospitalManage\obj\Debug\net8.0\HospitalManage.genruntimeconfig.cache
 H:\BMCSDL\Project\HospitalManage\HospitalManage\obj\Debug\net8.0\ref\HospitalManage.dll
-H:\BMCSDL\Project\HospitalManage\HospitalManage\obj\Debug\net8.0\HospitalManage.sourcelink.json
