@@ -1,0 +1,65 @@
+﻿@model IEnumerable<HospitalManage.Models.Patient>
+
+@{
+    ViewData["Title"] = "Tra cứu bệnh nhân";
+}
+
+<h2 class="text-center mt-4 mb-3">🧍 Danh sách bệnh nhân</h2>
+
+@using (Html.BeginForm("TraCuuBenhNhan", "Test", FormMethod.Get))
+{
+    <div class="row mb-4">
+        <div class="col-md-3">
+            <label for="phone">Số điện thoại:</label>
+            <input type="text" name="phone" class="form-control" placeholder="Nhập SĐT" />
+        </div>
+        <div class="col-md-3">
+            <label for="Gender">Giới tính:</label>
+            <select name="Gender" class="form-control">
+                <option value="">-- Tất cả --</option>
+                <option value="M">Nam</option>
+                <option value="F">Nữ</option>
+            </select>
+        </div>
+        <div class="col-md-3 d-flex align-items-end">
+            <button type="submit" class="btn btn-primary">🔍 Tra cứu</button>
+        </div>
+    </div>
+}
+
+@if (!Model.Any())
+{
+    <div class="alert alert-warning">Không tìm thấy bệnh nhân nào phù hợp.</div>
+}
+else
+{
+    <table class="table table-bordered table-striped">
+        <thead class="table-dark">
+            <tr>
+                <th>ID</th>
+                <th>Họ tên</th>
+                <th>Ngày sinh</th>
+                <th>Giới tính</th>
+                <th>CMND/CCCD</th>
+                <th>Địa chỉ</th>
+                <th>SĐT</th>
+                <th>Ngày tạo</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Id</td>
+                    <td>@item.FullName</td>
+                    <td>@item.BirthDate?.ToString("dd/MM/yyyy")</td>
+                    <td>@(item.Gender == "M" ? "Nam" : item.Gender == "F" ? "Nữ" : "-")</td>
+                    <td>@item.IdNumber</td>
+                    <td>@item.Address</td>
+                    <td>@item.PhoneNumber</td>
+                    <td>@item.CreatedAt?.ToString("dd/MM/yyyy HH:mm")</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

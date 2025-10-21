@@ -1,0 +1,42 @@
+﻿@model List<HospitalManage.Models.Appointment>
+
+@{
+    ViewData["Title"] = "Tra cứu cuộc hẹn";
+}
+
+<h2 class="text-center mt-4 mb-3">📅 Danh sách cuộc hẹn</h2>
+
+@using (Html.BeginForm("TraCuuCuocHen", "Test", FormMethod.Get))
+{
+    <div class="form-group mb-3">
+        <label for="id">Nhập ID cuộc hẹn để tra cứu:</label>
+        <input type="text" name="id" class="form-control" placeholder="Nhập ID" />
+        <button type="submit" class="btn btn-primary mt-2">Tra cứu</button>
+    </div>
+}
+
+<table class="table table-bordered table-striped mt-4">
+    <thead class="table-dark">
+        <tr>
+            <th>ID</th>
+            <th>Patient ID</th>
+            <th>Doctor ID</th>
+            <th>Ngày hẹn khám</th>
+            <th>Ghi chú</th>
+            <th>Ngày tạo</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.id</td>
+                <td>@item.patient_id</td>
+                <td>@item.doctor_id</td>
+                <td>@item.appointment_date.ToString("dd/MM/yyyy")</td>
+                <td>@item.notes</td>
+                <td>@item.created_at.ToString("dd/MM/yyyy HH:mm")</td>
+            </tr>
+        }
+    </tbody>
+</table>

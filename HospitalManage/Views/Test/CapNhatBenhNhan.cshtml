@@ -1,0 +1,67 @@
+﻿@model HospitalManage.Models.Patient
+
+@{
+    ViewData["Title"] = "Cập nhật bệnh nhân";
+}
+
+<h2 class="text-center mt-4 mb-3">👤 Cập nhật thông tin bệnh nhân</h2>
+
+<!-- Form tra cứu bệnh nhân theo ID -->
+@using (Html.BeginForm("CapNhatBenhNhan", "Test", FormMethod.Get))
+{
+    <input type="text" name="id" class="form-control" placeholder="Nhập ID bệnh nhân cần cập nhật" />
+    <button type="submit" class="btn btn-primary mt-2">Tra cứu</button>
+}
+
+<!-- Nếu model tồn tại và có id thì hiển thị form cập nhật -->
+@if (Model != null && Model.Id != 0)
+{
+    <hr />
+    <h4 class="mt-4">🔧 Thông tin bệnh nhân cần cập nhật</h4>
+
+    @using (Html.BeginForm("CapNhatBenhNhan", "Test", FormMethod.Post))
+    {
+        @Html.HiddenFor(model => model.Id)
+
+        <div class="form-group mb-3">
+            <label>Họ tên</label>
+            @Html.TextBoxFor(model => model.FullName, new { @class = "form-control", placeholder = "Nhập họ tên" })
+        </div>
+
+        <div class="form-group mb-3">
+            <label>Giới tính</label>
+            <select name="Gender" class="form-control">
+                @{
+                    string selectedM = Model.Gender == "M" ? "selected" : "";
+                    string selectedF = Model.Gender == "F" ? "selected" : "";
+                }
+                <option value="">-- Chọn giới tính --</option>
+                <option value="M" selectedM>Nam</option>
+                <option value="F" selectedF>Nữ</option>
+            </select>
+        </div>
+
+        <div class="form-group mb-3">
+            <label>Số điện thoại</label>
+            @Html.TextBoxFor(model => model.PhoneNumber, new { @class = "form-control", placeholder = "Nhập số điện thoại" })
+        </div>
+
+        <div class="form-group mb-3">
+            <label>Ngày sinh</label>
+            @Html.TextBoxFor(model => model.BirthDate, "{0:yyyy-MM-dd}", new { @class = "form-control", type = "date" })
+        </div>
+
+        <div class="form-group mb-3">
+            <label>CMND/CCCD</label>
+            @Html.TextBoxFor(model => model.IdNumber, new { @class = "form-control", placeholder = "Nhập CMND/CCCD" })
+        </div>
+
+        <div class="form-group mb-3">
+            <label>Địa chỉ</label>
+            @Html.TextBoxFor(model => model.Address, new { @class = "form-control", placeholder = "Nhập địa chỉ" })
+        </div>
+
+        <button type="submit" class="btn btn-success">💾 Lưu cập nhật</button>
+        <a href="@Url.Action("TraCuuBenhNhan", "Test")" class="btn btn-secondary ms-2">↩ Quay lại</a>
+    }
+}

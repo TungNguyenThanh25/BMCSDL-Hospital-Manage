@@ -1,0 +1,93 @@
+﻿@model HospitalManage.Models.RegisterViewModel
+@{
+    ViewData["Title"] = "Đăng ký";
+    Layout = "_LayoutFullScreen";
+}
+
+<div class="container-fluid">
+    <div class="animated fadeIn">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card mx-4">
+                    <div class="card-body p-4">
+                        <h1>Đăng ký</h1>
+                        <p class="text-muted">Tạo tài khoản mới</p>
+
+                        <form method="post">
+                            <div asp-validation-summary="All" class="text-danger mb-3"></div>
+
+                            <!-- Username -->
+                            <div class="form-group mb-3">
+                                <label asp-for="Username" class="form-label"></label>
+                                <div class="input-group">
+                                    <span class="input-group-text">
+                                        <i class="icon-user"></i>
+                                    </span>
+                                    <input asp-for="Username" class="form-control" placeholder="Tên đăng nhập" />
+                                </div>
+                                <span asp-validation-for="Username" class="text-danger small"></span>
+                            </div>
+
+                            <!-- Password -->
+                            <div class="form-group mb-3">
+                                <label asp-for="Password" class="form-label"></label>
+                                <div class="input-group">
+                                    <span class="input-group-text">
+                                        <i class="icon-lock"></i>
+                                    </span>
+                                    <input asp-for="Password" class="form-control" placeholder="Mật khẩu" />
+                                </div>
+                                <span asp-validation-for="Password" class="text-danger small"></span>
+                            </div>
+
+                            <!-- Confirm Password -->
+                            <div class="form-group mb-3">
+                                <label asp-for="ConfirmPassword" class="form-label"></label>
+                                <div class="input-group">
+                                    <span class="input-group-text">
+                                        <i class="icon-lock"></i>
+                                    </span>
+                                    <input asp-for="ConfirmPassword" class="form-control" placeholder="Nhập lại mật khẩu" />
+                                </div>
+                                <span asp-validation-for="ConfirmPassword" class="text-danger small"></span>
+                            </div>
+
+                            <!-- Role -->
+                            <div class="form-group mb-3">
+                                <label asp-for="Role" class="form-label"></label>
+                                <div class="input-group">
+                                    <span class="input-group-text">
+                                        <i class="icon-people"></i>
+                                    </span>
+                                    <input asp-for="Role" class="form-control" placeholder="Vai trò" />
+                                </div>
+                                <span asp-validation-for="Role" class="text-danger small"></span>
+                            </div>
+
+                            <!-- StaffId -->
+                            <div class="form-group mb-4">
+                                <label asp-for="StaffId" class="form-label"></label>
+                                <div class="input-group">
+                                    <span class="input-group-text">
+                                        <i class="icon-id-card"></i>
+                                    </span>
+                                    <input asp-for="StaffId" class="form-control" placeholder="Mã nhân viên" />
+                                </div>
+                                <span asp-validation-for="StaffId" class="text-danger small"></span>
+                            </div>
+
+                            <button type="submit" class="btn btn-block btn-success">Tạo tài khoản</button>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

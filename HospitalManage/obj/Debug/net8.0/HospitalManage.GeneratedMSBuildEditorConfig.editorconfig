@@ -1,0 +1,269 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = HospitalManage
+build_property.RootNamespace = HospitalManage
+build_property.ProjectDir = H:\BMCSDL\Project\HospitalManage\HospitalManage\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = H:\BMCSDL\Project\HospitalManage\HospitalManage
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
+
+[H:/BMCSDL/Project/HospitalManage/HospitalManage/Views/404.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcNDA0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/BMCSDL/Project/HospitalManage/HospitalManage/Views/500.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcNTAwLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/BMCSDL/Project/HospitalManage/HospitalManage/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/BMCSDL/Project/HospitalManage/HospitalManage/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/BMCSDL/Project/HospitalManage/HospitalManage/Views/Base/breadcrumb.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFzZVxicmVhZGNydW1iLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/BMCSDL/Project/HospitalManage/HospitalManage/Views/Base/cards.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFzZVxjYXJkcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/BMCSDL/Project/HospitalManage/HospitalManage/Views/Base/carousel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFzZVxjYXJvdXNlbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/BMCSDL/Project/HospitalManage/HospitalManage/Views/Base/collapse.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFzZVxjb2xsYXBzZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/BMCSDL/Project/HospitalManage/HospitalManage/Views/Base/forms.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFzZVxmb3Jtcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/BMCSDL/Project/HospitalManage/HospitalManage/Views/Base/jumbotron.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFzZVxqdW1ib3Ryb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/BMCSDL/Project/HospitalManage/HospitalManage/Views/Base/list-group.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFzZVxsaXN0LWdyb3VwLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/BMCSDL/Project/HospitalManage/HospitalManage/Views/Base/navs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFzZVxuYXZzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/BMCSDL/Project/HospitalManage/HospitalManage/Views/Base/pagination.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFzZVxwYWdpbmF0aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/BMCSDL/Project/HospitalManage/HospitalManage/Views/Base/popovers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFzZVxwb3BvdmVycy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/BMCSDL/Project/HospitalManage/HospitalManage/Views/Base/progress.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFzZVxwcm9ncmVzcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/BMCSDL/Project/HospitalManage/HospitalManage/Views/Base/scrollspy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFzZVxzY3JvbGxzcHkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/BMCSDL/Project/HospitalManage/HospitalManage/Views/Base/switches.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFzZVxzd2l0Y2hlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/BMCSDL/Project/HospitalManage/HospitalManage/Views/Base/tables.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFzZVx0YWJsZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/BMCSDL/Project/HospitalManage/HospitalManage/Views/Base/tabs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFzZVx0YWJzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/BMCSDL/Project/HospitalManage/HospitalManage/Views/Base/tooltips.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFzZVx0b29sdGlwcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/BMCSDL/Project/HospitalManage/HospitalManage/Views/blank.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcYmxhbmsuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/BMCSDL/Project/HospitalManage/HospitalManage/Views/Buttons/brand-buttons.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnV0dG9uc1xicmFuZC1idXR0b25zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/BMCSDL/Project/HospitalManage/HospitalManage/Views/Buttons/button-group.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnV0dG9uc1xidXR0b24tZ3JvdXAuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/BMCSDL/Project/HospitalManage/HospitalManage/Views/Buttons/buttons.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnV0dG9uc1xidXR0b25zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/BMCSDL/Project/HospitalManage/HospitalManage/Views/Buttons/dropdowns.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnV0dG9uc1xkcm9wZG93bnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/BMCSDL/Project/HospitalManage/HospitalManage/Views/charts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcY2hhcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/BMCSDL/Project/HospitalManage/HospitalManage/Views/colors.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcY29sb3JzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/BMCSDL/Project/HospitalManage/HospitalManage/Views/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/BMCSDL/Project/HospitalManage/HospitalManage/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/BMCSDL/Project/HospitalManage/HospitalManage/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/BMCSDL/Project/HospitalManage/HospitalManage/Views/Icons/coreui-icons.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWNvbnNcY29yZXVpLWljb25zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/BMCSDL/Project/HospitalManage/HospitalManage/Views/Icons/flags.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWNvbnNcZmxhZ3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/BMCSDL/Project/HospitalManage/HospitalManage/Views/Icons/font-awesome.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWNvbnNcZm9udC1hd2Vzb21lLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/BMCSDL/Project/HospitalManage/HospitalManage/Views/Icons/simple-line-icons.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWNvbnNcc2ltcGxlLWxpbmUtaWNvbnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/BMCSDL/Project/HospitalManage/HospitalManage/Views/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/BMCSDL/Project/HospitalManage/HospitalManage/Views/MedicalRecord/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVkaWNhbFJlY29yZFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/BMCSDL/Project/HospitalManage/HospitalManage/Views/MedicalRecord/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVkaWNhbFJlY29yZFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/BMCSDL/Project/HospitalManage/HospitalManage/Views/Notifications/alerts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90aWZpY2F0aW9uc1xhbGVydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/BMCSDL/Project/HospitalManage/HospitalManage/Views/Notifications/badge.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90aWZpY2F0aW9uc1xiYWRnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/BMCSDL/Project/HospitalManage/HospitalManage/Views/Notifications/modals.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90aWZpY2F0aW9uc1xtb2RhbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/BMCSDL/Project/HospitalManage/HospitalManage/Views/Patient/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aWVudFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/BMCSDL/Project/HospitalManage/HospitalManage/Views/Patient/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aWVudFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/BMCSDL/Project/HospitalManage/HospitalManage/Views/Patient/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aWVudFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/BMCSDL/Project/HospitalManage/HospitalManage/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/BMCSDL/Project/HospitalManage/HospitalManage/Views/Shared/_AsideMenu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Bc2lkZU1lbnUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/BMCSDL/Project/HospitalManage/HospitalManage/Views/Shared/_CookieConsentPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Db29raWVDb25zZW50UGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/BMCSDL/Project/HospitalManage/HospitalManage/Views/Shared/_LayoutFullScreen.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRGdWxsU2NyZWVuLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/BMCSDL/Project/HospitalManage/HospitalManage/Views/Shared/_NavBar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9OYXZCYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/BMCSDL/Project/HospitalManage/HospitalManage/Views/Shared/_SideBar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TaWRlQmFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/BMCSDL/Project/HospitalManage/HospitalManage/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/BMCSDL/Project/HospitalManage/HospitalManage/Views/Test/CapNhatBenhNhan.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVzdFxDYXBOaGF0QmVuaE5oYW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/BMCSDL/Project/HospitalManage/HospitalManage/Views/Test/CapNhatCuocHen.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVzdFxDYXBOaGF0Q3VvY0hlbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/BMCSDL/Project/HospitalManage/HospitalManage/Views/Test/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVzdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/BMCSDL/Project/HospitalManage/HospitalManage/Views/Test/ThemBenhNhan.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVzdFxUaGVtQmVuaE5oYW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/BMCSDL/Project/HospitalManage/HospitalManage/Views/Test/ThemDuLieuCuocHen.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVzdFxUaGVtRHVMaWV1Q3VvY0hlbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/BMCSDL/Project/HospitalManage/HospitalManage/Views/Test/TraCuuBenhNhan.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVzdFxUcmFDdXVCZW5oTmhhbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/BMCSDL/Project/HospitalManage/HospitalManage/Views/Test/TraCuuCuocHen.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVzdFxUcmFDdXVDdW9jSGVuLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/BMCSDL/Project/HospitalManage/HospitalManage/Views/typography.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcdHlwb2dyYXBoeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/BMCSDL/Project/HospitalManage/HospitalManage/Views/widgets.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3Ncd2lkZ2V0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/BMCSDL/Project/HospitalManage/HospitalManage/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/BMCSDL/Project/HospitalManage/HospitalManage/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/BMCSDL/Project/HospitalManage/HospitalManage/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-in0q49q432

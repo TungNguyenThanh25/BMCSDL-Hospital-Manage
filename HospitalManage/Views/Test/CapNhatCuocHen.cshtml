@@ -1,0 +1,54 @@
+﻿@model HospitalManage.Models.Appointment
+
+@{
+    ViewData["Title"] = "Cập nhật hồ sơ bệnh án";
+}
+
+<h2 class="text-center mt-4 mb-3">📝 Cập nhật hồ sơ bệnh án</h2>
+
+<!-- Form tra cứu -->
+@using (Html.BeginForm("CapNhatCuocHen", "Test", FormMethod.Get))
+{
+    <input type="text" name="id" class="form-control" placeholder="Nhập ID hồ sơ cần cập nhật" />
+    <button type="submit" class="btn btn-primary mt-2">Tra cứu</button>
+}
+
+<!-- Chỉ hiển thị form cập nhật nếu Model có dữ liệu -->
+@if (Model != null && Model.id != 0)
+{
+    <hr />
+    <h4 class="mt-4">🔧 Thông tin hồ sơ cần cập nhật</h4>
+
+    @using (Html.BeginForm("CapNhatCuocHen", "Test", FormMethod.Post))
+    {
+        @Html.HiddenFor(model => model.id)
+
+        <div class="form-group mb-3">
+            <label>Patient ID</label>
+            @Html.TextBoxFor(model => model.patient_id, new { @class = "form-control" })
+        </div>
+
+        <div class="form-group mb-3">
+            <label>Doctor ID</label>
+            @Html.TextBoxFor(model => model.doctor_id, new { @class = "form-control" })
+        </div>
+
+        <div class="form-group mb-3">
+            <label>Ngày khám</label>
+            @Html.TextBoxFor(model => model.appointment_date, "{0:yyyy-MM-dd}", new { @class = "form-control", type = "date" })
+        </div>
+
+        <div class="form-group mb-3">
+            <label>Chẩn đoán</label>
+            @Html.TextBoxFor(model => model.created_at, "{0:yyyy-MM-dd}", new { @class = "form-control", type = "date" })
+        </div>
+
+        <div class="form-group mb-3">
+            <label>Ghi chú chi tiết</label>
+            @Html.TextAreaFor(model => model.notes, 5, 50, new { @class = "form-control" })
+        </div>
+
+        <button type="submit" class="btn btn-success">💾 Lưu cập nhật</button>
+        <a href="@Url.Action("TraCuuCuocHen", "Test")" class="btn btn-secondary ms-2">↩ Quay lại</a>
+    }
+}

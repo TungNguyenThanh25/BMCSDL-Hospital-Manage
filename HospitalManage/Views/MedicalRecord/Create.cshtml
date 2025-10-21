@@ -1,0 +1,44 @@
+﻿@model HospitalManage.Models.CreateMedicalRecordViewModel
+
+@{
+    ViewData["Title"] = "Tạo Bệnh án mới";
+}
+
+<h4>@ViewData["Title"]</h4>
+<hr />
+<div class="row">
+    <div class="col-md-6">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <input type="hidden" asp-for="PatientId" />
+            <input type="hidden" asp-for="DoctorId" />
+
+            <div class="form-group">
+                <label asp-for="Diagnosis" class="control-label"></label>
+                <input asp-for="Diagnosis" class="form-control" />
+                <span asp-validation-for="Diagnosis" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="DetailedNotes" class="control-label"></label>
+                <textarea asp-for="DetailedNotes" class="form-control" rows="5"></textarea>
+                <span asp-validation-for="DetailedNotes" class="text-danger"></span>
+            </div>
+            <br />
+            <div class="form-group">
+                <input type="submit" value="Lưu Bệnh án" class="btn btn-success" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index" asp-route-patientId="@Model.PatientId">Trở về danh sách</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

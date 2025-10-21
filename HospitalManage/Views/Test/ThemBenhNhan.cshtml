@@ -1,0 +1,61 @@
+﻿@model HospitalManage.Models.Patient
+
+@{
+    ViewData["Title"] = "Thêm bệnh nhân mới";
+}
+
+<h2 class="text-center mt-4 mb-3">👤 Thêm bệnh nhân</h2>
+
+@if (TempData["Success"] != null)
+{
+    <div class="alert alert-success">@TempData["Success"]</div>
+}
+@if (TempData["Error"] != null)
+{
+    <div class="alert alert-danger">@TempData["Error"]</div>
+}
+
+@using (Html.BeginForm("ThemBenhNhan", "Test", FormMethod.Post))
+{
+    <div class="form-group mb-3">
+        <label>ID bệnh nhân</label>
+        @Html.TextBoxFor(model => model.Id, new { @class = "form-control", placeholder = "Nhập ID bệnh nhân" })
+    </div>
+
+    <div class="form-group mb-3">
+        <label>Họ tên</label>
+        @Html.TextBoxFor(model => model.FullName, new { @class = "form-control", placeholder = "Nhập họ tên bệnh nhân" })
+    </div>
+
+    <div class="form-group mb-3">
+        <label>Ngày sinh</label>
+        @Html.TextBoxFor(model => model.BirthDate, "{0:yyyy-MM-dd}", new { @class = "form-control", type = "date" })
+    </div>
+
+    <div class="form-group mb-3">
+        <label>Giới tính</label>
+        <select name="gender" class="form-control">
+            <option value="">-- Chọn giới tính --</option>
+            <option value="M">Nam</option>
+            <option value="F">Nữ</option>
+        </select>
+    </div>
+
+    <div class="form-group mb-3">
+        <label>CMND/CCCD</label>
+        @Html.TextBoxFor(model => model.IdNumber, new { @class = "form-control", placeholder = "Nhập số CMND/CCCD" })
+    </div>
+
+    <div class="form-group mb-3">
+        <label>Địa chỉ</label>
+        @Html.TextBoxFor(model => model.Address, new { @class = "form-control", placeholder = "Nhập địa chỉ" })
+    </div>
+
+    <div class="form-group mb-3">
+        <label>Số điện thoại</label>
+        @Html.TextBoxFor(model => model.PhoneNumber, new { @class = "form-control", placeholder = "Nhập số điện thoại" })
+    </div>
+
+    <button type="submit" class="btn btn-success">➕ Thêm bệnh nhân</button>
+    <a href="@Url.Action("TraCuuBenhNhan", "Test")" class="btn btn-secondary ms-2">↩ Quay lại</a>
+}

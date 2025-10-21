@@ -1,0 +1,102 @@
+﻿@model IEnumerable<HospitalManage.Models.Patient>
+
+@{
+    ViewData["Title"] = "Danh sách bệnh nhân";
+}
+
+<div class="container-fluid">
+    <div class="animated fadeIn">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <div>
+                            <i class="fa fa-align-justify"></i> Danh sách bệnh nhân
+                        </div>
+                        <a class="btn btn-primary btn-sm" asp-action="Create">
+                            <i class="fa fa-plus"></i> Thêm mới
+                        </a>
+                    </div>
+
+                    <div class="card-body">
+
+                        @if (TempData["Success"] != null)
+                        {
+                            <div class="alert alert-success">@TempData["Success"]</div>
+                        }
+                        @if (TempData["Error"] != null)
+                        {
+                            <div class="alert alert-danger">@TempData["Error"]</div>
+                        }
+
+                        <table class="table table-responsive-sm table-bordered table-striped table-sm">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Họ và tên</th>
+                                    <th>CCCD</th>
+                                    <th>Ngày sinh</th>
+                                    <th>Giới tính</th>
+                                    <th>Địa chỉ</th>
+                                    <th>Số điện thoại</th>
+                                    <th>Ngày tạo</th>
+                                    <th class="text-center">Thao tác</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @if (Model != null && Model.Any())
+                                {
+                                    foreach (var p in Model)
+                                    {
+                                        <tr>
+                                            <td>@p.Id</td>
+                                            <td>@p.FullName</td>
+                                            <td>@p.IdNumber</td>
+                                            <td>@(p.BirthDate?.ToString("dd/MM/yyyy") ?? "-")</td>
+                                            <td>@(p.Gender == "M" ? "Nam" : p.Gender == "F" ? "Nữ" : "-")</td>
+                                            <td>@p.Address</td>
+                                            <td>@p.PhoneNumber</td>
+                                            <td>@(p.CreatedAt?.ToString("dd/MM/yyyy") ?? "-")</td>
+                                            <td class="text-center">
+                                                <a asp-action="Edit" asp-route-id="@p.Id" class="btn btn-sm btn-warning">
+                                                    <i class="fa fa-edit"></i>
+                                                    <a asp-controller="MedicalRecord" asp-action="Index" asp-route-patientId="@p.Id" class="btn btn-info btn-sm">
+                                                        Xem Bệnh án
+                                                    </a>
+                                                </a>
+                                            <td>
+                                                @* Form ẩn để xóa *@
+                                                <form asp-action="DeleteConfirmed" method="post" style="display:inline;">
+                                                    <input type="hidden" name="id" value="@p.Id" />
+                                                    <button type="submit" class="btn btn-sm btn-danger" onclick="return confirm('Xác nhận xóa bệnh nhân này?');">
+                                                        <i class="fa fa-trash"></i>
+                                                    </button>
+                                                </form>
+
+                                            </td>
+                                        </tr>
+                                    }
+                                }
+                                else
+                                {
+                                    <tr>
+                                        <td colspan="9" class="text-center text-muted">Không có dữ liệu bệnh nhân</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+
+                        <nav>
+                            <ul class="pagination justify-content-center">
+                                <li class="page-item"><a class="page-link" href="#">Prev</a></li>
+                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                            </ul>
+                        </nav>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

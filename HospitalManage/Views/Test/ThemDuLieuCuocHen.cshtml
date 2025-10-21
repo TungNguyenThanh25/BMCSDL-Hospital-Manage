@@ -1,0 +1,47 @@
+﻿@model HospitalManage.Models.Appointment
+
+@{
+    ViewData["Title"] = "Thêm cuộc hẹn khám bệnh";
+}
+
+<h2 class="text-center mt-4 mb-3">📅 Thêm cuộc hẹn mới</h2>
+
+@if (TempData["Success"] != null)
+{
+    <div class="alert alert-success">@TempData["Success"]</div>
+}
+@if (TempData["Error"] != null)
+{
+    <div class="alert alert-danger">@TempData["Error"]</div>
+}
+
+@using (Html.BeginForm("ThemDuLieuCuocHen", "Test", FormMethod.Post))
+{
+    <div class="form-group mb-3">
+        <label>ID cuộc hẹn</label>
+        @Html.TextBoxFor(model => model.id, new { @class = "form-control", placeholder = "Nhập ID cuộc hẹn" })
+    </div>
+
+    <div class="form-group mb-3">
+        <label>Patient ID</label>
+        @Html.TextBoxFor(model => model.patient_id, new { @class = "form-control", placeholder = "Nhập mã bệnh nhân" })
+    </div>
+
+    <div class="form-group mb-3">
+        <label>Doctor ID</label>
+        @Html.TextBoxFor(model => model.doctor_id, new { @class = "form-control", placeholder = "Nhập mã bác sĩ" })
+    </div>
+
+    <div class="form-group mb-3">
+        <label>Ngày hẹn khám</label>
+        @Html.TextBoxFor(model => model.appointment_date, "{0:yyyy-MM-dd}", new { @class = "form-control", type = "date" })
+    </div>
+
+    <div class="form-group mb-3">
+        <label>Ghi chú</label>
+        @Html.TextAreaFor(model => model.notes, 5, 50, new { @class = "form-control", placeholder = "Nhập ghi chú cuộc hẹn" })
+    </div>
+
+    <button type="submit" class="btn btn-success">➕ Thêm cuộc hẹn</button>
+    <a href="@Url.Action("TraCuuCuocHen", "Test")" class="btn btn-secondary ms-2">↩ Quay lại</a>
+}

@@ -1,0 +1,98 @@
+﻿@model HospitalManage.Models.Patient
+
+@{
+    ViewData["Title"] = "Thêm bệnh nhân";
+}
+
+<div class="container-fluid">
+    <div class="animated fadeIn">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header">
+                        <strong>Thêm mới</strong> Bệnh nhân
+                    </div>
+
+                    <form asp-action="Create" method="post" class="form-horizontal">
+                        <div class="card-body">
+
+                            <div class="form-group row">
+                                <label class="col-md-3 col-form-label" for="FullName">Họ và tên</label>
+                                <div class="col-md-9">
+                                    <input asp-for="FullName" class="form-control" placeholder="Nhập họ và tên..." />
+                                    <span asp-validation-for="FullName" class="text-danger"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-md-3 col-form-label" for="IdNumber">CCCD</label>
+                                <div class="col-md-9">
+                                    <input asp-for="IdNumber" class="form-control" placeholder="Nhập CCCD..." />
+                                    <span asp-validation-for="IdNumber" class="text-danger"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-md-3 col-form-label" for="BirthDate">Ngày sinh</label>
+                                <div class="col-md-9">
+                                    <input asp-for="BirthDate" type="date" class="form-control" />
+                                    <span asp-validation-for="BirthDate" class="text-danger"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-md-3 col-form-label">Giới tính</label>
+                                <div class="col-md-9 col-form-label">
+                                    <div class="form-check form-check-inline mr-1">
+                                        <input asp-for="Gender" class="form-check-input" type="radio" value="M" id="male" />
+                                        <label class="form-check-label" for="male">Nam</label>
+                                    </div>
+                                    <div class="form-check form-check-inline mr-1">
+                                        <input asp-for="Gender" class="form-check-input" type="radio" value="F" id="female" />
+                                        <label class="form-check-label" for="female">Nữ</label>
+                                    </div>
+                                    <span asp-validation-for="Gender" class="text-danger"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-md-3 col-form-label" for="Address">Địa chỉ</label>
+                                <div class="col-md-9">
+                                    <textarea asp-for="Address" class="form-control" rows="3" placeholder="Nhập địa chỉ..."></textarea>
+                                    <span asp-validation-for="Address" class="text-danger"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-md-3 col-form-label" for="PhoneNumber">Số điện thoại</label>
+                                <div class="col-md-9">
+                                    <input asp-for="PhoneNumber" class="form-control" placeholder="Nhập số điện thoại..." />
+                                    <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card-footer text-right">
+                            <button class="btn btn-sm btn-primary" type="submit">
+                                <i class="fa fa-dot-circle-o"></i> Lưu
+                            </button>
+                            <a asp-action="Index" class="btn btn-sm btn-secondary">
+                                <i class="fa fa-arrow-left"></i> Quay lại
+                            </a>
+                            <button class="btn btn-sm btn-danger" type="reset">
+                                <i class="fa fa-ban"></i> Reset
+                            </button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

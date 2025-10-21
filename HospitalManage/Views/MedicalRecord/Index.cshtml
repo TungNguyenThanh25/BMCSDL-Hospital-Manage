@@ -1,0 +1,33 @@
+﻿@model IEnumerable<HospitalManage.Models.MedicalRecordViewModel>
+
+@{
+    ViewData["Title"] = "Lịch sử Bệnh án";
+}
+
+<h3>Lịch sử Bệnh án của Bệnh nhân: @ViewBag.PatientName</h3>
+
+<p>
+    <a asp-action="Create" asp-route-patientId="@ViewBag.PatientId" class="btn btn-primary">Tạo Bệnh án mới</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Ngày khám</th>
+            <th>Bác sĩ</th>
+            <th>Chẩn đoán</th>
+            <th>Ghi chú</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.ExaminationDate.ToString("dd/MM/yyyy")</td>
+                <td>@item.DoctorName</td>
+                <td>@item.Diagnosis</td>
+                <td>@item.DetailedNotes</td>
+            </tr>
+        }
+    </tbody>
+</table>
