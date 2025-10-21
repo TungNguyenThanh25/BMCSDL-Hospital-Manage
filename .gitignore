@@ -1,2 +1,18 @@
-.vs
+# Visual Studio
+.vs/
+.vscode/
+
+# Build output
+bin/
 obj/
+Debug/
+Release/
+
+# User-specific files
+*.user
+*.suo
+
+# Other temp files
+*.log
+*.tmp
+*.cache
