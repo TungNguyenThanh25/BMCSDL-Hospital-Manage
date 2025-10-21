@@ -100,6 +100,22 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFzZVx0b29sdGlwcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[H:/BMCSDL/Project/HospitalManage/HospitalManage/Views/Billing/DecryptBill.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmlsbGluZ1xEZWNyeXB0QmlsbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/BMCSDL/Project/HospitalManage/HospitalManage/Views/Billing/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmlsbGluZ1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/BMCSDL/Project/HospitalManage/HospitalManage/Views/Billing/Process.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmlsbGluZ1xQcm9jZXNzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/BMCSDL/Project/HospitalManage/HospitalManage/Views/Billing/ViewBill.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmlsbGluZ1xWaWV3QmlsbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [H:/BMCSDL/Project/HospitalManage/HospitalManage/Views/blank.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcYmxhbmsuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

@@ -1,6 +1,8 @@
-using Microsoft.AspNetCore.Authentication.Cookies;
+﻿using HospitalManage.Encryp;
 using HospitalManage.Services.Encryption;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Oracle.ManagedDataAccess.Client;
+using System.Security.Cryptography;
 
 namespace HospitalManage
 {
@@ -36,6 +38,9 @@ namespace HospitalManage
                     options.ExpireTimeSpan = TimeSpan.FromMinutes(20);
                     options.SlidingExpiration = true;
                 });
+
+            // Khởi tạo cặp khóa RSA dùng chung toàn hệ thống
+            RsaKeyStore.Initialize();
 
             var app = builder.Build();
 
